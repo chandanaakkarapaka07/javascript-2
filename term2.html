@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+let number = prompt("Enter a number:");
+number = parseInt(number);
+      
+function sumOfFirstAndLastDigit(num) {
+    let lastDigit = num % 10;
+    let firstDigit = parseInt(num.toString()[0]);
+    return firstDigit + lastDigit;
+}
+
+let result = sumOfFirstAndLastDigit(number);
+console.log("Sum of the first and last digit of " + number + " is: " + result);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

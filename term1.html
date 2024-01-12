@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+
+
+    let x = prompt("Enter a number:");
+    let number = parseInt(x);
+
+function isPerfectNumber(number) {
+    let sum = 0;
+
+    for (let i = 1; i < number; i++) {
+        if (number % i === 0) {
+            sum += i;
+        }
+    }
+
+    return sum === number;
+}
+if (isNaN(number)) {
+    console.log("Invalid input. Please enter a valid number.");
+} else {
+    if (isPerfectNumber(number)) {
+        console.log(`${number} is a perfect number.`);
+    } else {
+        console.log(`${number} is not a perfect number.`);
+    }
+}
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
